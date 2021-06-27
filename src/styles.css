@@ -1,0 +1,145 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../src/images/bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+#form{
+    border-style: none;
+}
+
+.main-container{
+
+    flex-direction: column;
+    
+
+}
+/*navbar----------------------*/
+.nav-bar {
+    background-color: transparent;
+    color: #0A1931;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding: 0;
+    text-shadow: black;
+    position: absolute;
+    top: 0;
+    left:0;
+
+  }
+  .nav-bar:hover{
+    background-color: #E8F0F2;
+
+    transition: 1s;
+  }
+  .nav-item {
+    float: left;
+    padding: 0rem 1rem;
+    color:#0A1931;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    padding: 5px 32px;
+    border: none;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.541);
+    text-decoration: none;
+    color: #0A1931;
+    margin-right: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: large;
+  }
+  .nav-item:hover {
+    color: #FF616D;
+  }
+  .login {
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .login:hover {
+    background-color: rgba(255, 0, 0, 0.541);
+    color: white;
+  }
+
+  .signup{
+      color: white;
+      background-color: rgba(255, 0, 0, 0.8);
+      border-radius: 5px;
+  }
+
+/*nav bar end----------------------*/
+
+.component{
+    padding: 2rem;
+    background-color: #0A1931;
+    box-shadow: 0 5px 15px rgba(0 ,0 ,0, 0.3);
+    position: relative;
+    left: 32rem;
+    bottom: 3rem; 
+    color: white;
+    border-radius: 5px;
+
+    
+}
+.form-label{
+    margin-top: 1rem !important;
+}
+.form-control{
+    background:transparent !important;
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    outline: none !important;
+    color: white !important;
+}
+
+.img-boy{
+    background: url(../src/images/image-boy.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    
+}
+
+@media  only screen and (max-width:1300px) {
+
+    .component{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .img-boy{
+        opacity: 0;
+    }
+    
+}
+
+
